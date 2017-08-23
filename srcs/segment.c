@@ -6,7 +6,7 @@
 /*   By: hivian <hivian@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/04 16:08:06 by hivian            #+#    #+#             */
-/*   Updated: 2017/08/22 15:04:26 by hivian           ###   ########.fr       */
+/*   Updated: 2017/08/23 15:36:32 by hivian           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,4 +36,6 @@ void		rewrite_phdr(t_env *e)
 	}
 	if (!e->last_load)
 		print_error("ERROR: No load segment");
+	if (e->first_load->p_vaddr == 0)
+		print_error("ERROR: _start memory address is an offset.");
 }
