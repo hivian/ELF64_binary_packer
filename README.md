@@ -4,7 +4,7 @@ ELF packer for 64-bit architecture
 Basic packer:
 
 - Create a new modified binary.
-- Cypher its .text section.
+- Cypher its .text section using a random 64-bit key.
 - Add a new custom section which is the new entrypoint of the program.
 - At runtime the new section decyphers the .text section and jump to it.
 
