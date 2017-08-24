@@ -6,7 +6,7 @@
 /*   By: hivian <hivian@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/05 09:58:36 by hivian            #+#    #+#             */
-/*   Updated: 2017/08/14 12:39:49 by hivian           ###   ########.fr       */
+/*   Updated: 2017/08/24 10:26:33 by hivian           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,13 +28,13 @@ static bool		is_elf(t_env *e)
 void			check_elf64(t_env *e)
 {
 	if (!is_elf(e))
-		print_error("Not an elf file");
+		print_error("Error: not an elf file");
 	switch(e->ehdr64->e_ident[EI_CLASS])
 	{
 		case ELFCLASS64:
 			break;
 		default:
-			print_error("Error: File architecture not supported. x86_64 only");
+			print_error("Error: file architecture not supported. x86_64 only");
 			break;
 	}
 }
