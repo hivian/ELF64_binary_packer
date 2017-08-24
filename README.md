@@ -1,5 +1,5 @@
 # ELF64_binary_packer
-ELF packer for 64-bit architecture
+ELF packer for 64-bit architecture  - Project compiled under Debian 8
 
 Basic packer:
 
