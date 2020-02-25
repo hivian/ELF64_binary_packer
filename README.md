@@ -13,3 +13,7 @@ Basic packer:
 ```./packer [file_to_pack]```<br>
 and<br>
 ```./new_binary```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
