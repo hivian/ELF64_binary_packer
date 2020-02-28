@@ -1,17 +1,6 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   woody_woodpacker.h                                 :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: hivian <hivian@student.42.fr>              +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/02/06 11:54:03 by hivian            #+#    #+#             */
-/*   Updated: 2017/08/23 11:35:14 by hivian           ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
 
-#ifndef WOODY_WOODPACKER_H
-# define WOODY_WOODPACKER_H
+#ifndef ELF64_PACKER_H
+# define ELF64_PACKER_H
 
 # include <stdio.h>
 # include <string.h>
@@ -54,7 +43,7 @@ typedef struct				s_env
 	unsigned char			**data_sec;
 }							t_env;
 
-void						woody_woodpacker(t_env *e);
+void						elf64_packer(t_env *e);
 void						check_elf64(t_env *e);
 void						check_ehdr(t_env *e);
 void						run(char *arg, t_env *e);

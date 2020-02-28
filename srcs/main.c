@@ -1,16 +1,5 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: hivian <hivian@student.42.fr>              +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/01/11 09:43:00 by hivian            #+#    #+#             */
-/*   Updated: 2017/08/22 11:48:28 by hivian           ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
 
-#include "woody_woodpacker.h"
+#include "elf64_packer.h"
 
 int				main(int ac, char **av)
 {
@@ -19,7 +8,7 @@ int				main(int ac, char **av)
 	if (!(e = (t_env *)malloc(sizeof(t_env))))
 		print_error("Error: malloc");
 	if (ac != 2)
-		print_error("Usage: woody_woodpacker [file]");
+		print_error("Usage: ./packer [file]");
 	av++;
 	run(*av, e);
 	free(e);
